@@ -26,7 +26,7 @@ console.log('removed last array item:', removedItem);
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Adding 25 to supplyChanges.');
 supplyChanges.push(25);
-console.log('added new array value:', supplyChanges);
+console.log('added new array value:', supplyChanges[supplyChanges.length -1]);
 
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
 //    Use a console.log formatted as follows, where x is the value from the array
@@ -34,27 +34,15 @@ console.log('added new array value:', supplyChanges);
 //    - if the value is 0, skip it. Do not log it to the console.
 //    - if the value is negative, format the log as 'Part count -x.'
 console.log('6. Showing supplyChanges...');
-let x = [];
-let negX = [];
-
-for(i = 0; i < supplyChanges.length; i++){
-  console.log('each value in supplyChanges:', supplyChanges[i]);
-}//end of for loop
 
 for(i = 0; i < supplyChanges.length; i++){
   if(supplyChanges[i] > 0){
-    x.push(supplyChanges[i]);
-    // console.log('Added x parts:', x[i]);
+    console.log('Added x parts:', supplyChanges[i]);
   } else if(supplyChanges[i] < 0){
-    negX.push(supplyChanges[i]);
-    // console.log('Part count -x', negX[i]);
-  } else if(i === 0 ){
-    //how do you not log a value?
-  }//end of else if chain
-  // console.log('Added x parts:', x[i]);
-  // console.log('Part count -x', negX[i]);
-}//end of second for loop
-
+    console.log('Part count -x:', supplyChanges[i]);
+  } else{
+  }//end else if chain
+}//end of for loop
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
@@ -66,9 +54,7 @@ for(supply of supplyChanges){
   } else if(supply < 0){
     console.log('Part count -x', supply);
   } else {
-    console.log('Nothing to show here!');
   }//end of if else chain
-  // console.log('for of loop:', supply);
 }//end of for of loop
 
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
