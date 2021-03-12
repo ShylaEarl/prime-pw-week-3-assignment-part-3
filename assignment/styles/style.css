@@ -2,3 +2,34 @@
 body {
   background-color: #ff9999;
 }
+
+.header{
+  border: solid;
+  background-color: lightcyan;
+  color: saddlebrown;
+  text-align: center;
+  box-shadow: 0 1px 3px;
+}
+
+h3{
+  color: antiquewhite;
+  padding-left: 15px;
+  text-shadow: 2px 2px saddlebrown;
+}
+
+.orderedList{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: antiquewhite;
+  color: saddlebrown;
+}
+
+.footer{
+  border: solid;
+  background-color: lightcyan;
+  color: saddlebrown;
+  padding-left: 10px;
+  box-shadow: 0 1px 3px;
+}
